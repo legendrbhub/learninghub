@@ -1,0 +1,141 @@
+My Second commit code
+
+
+[root@e2e56099cad5 vigilant_nashgit]# vi file2
+[root@e2e56099cad5 vigilant_nashgit]# ls
+file2
+[root@e2e56099cad5 vigilant_nashgit]#
+[root@e2e56099cad5 vigilant_nashgit]#
+[root@e2e56099cad5 vigilant_nashgit]# git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+[root@e2e56099cad5 vigilant_nashgit]# git add .
+[root@e2e56099cad5 vigilant_nashgit]# ls
+file2
+[root@e2e56099cad5 vigilant_nashgit]#
+[root@e2e56099cad5 vigilant_nashgit]# git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file2
+
+[root@e2e56099cad5 vigilant_nashgit]#
+[root@e2e56099cad5 vigilant_nashgit]#
+[root@e2e56099cad5 vigilant_nashgit]#
+[root@e2e56099cad5 vigilant_nashgit]# git commit -m "my second commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'root@e2e56099cad5.(none)')
+[root@e2e56099cad5 vigilant_nashgit]# vigilant_nash^C
+[root@e2e56099cad5 vigilant_nashgit]# git config --global user.name "vigilant_nash"
+[root@e2e56099cad5 vigilant_nashgit]# git config --global user.email "vigilant_nash@gmail.com"
+[root@e2e56099cad5 vigilant_nashgit]# git commit -m "my second commit"
+[master (root-commit) 7d7d8aa] my second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file2
+[root@e2e56099cad5 vigilant_nashgit]# git status
+On branch master
+nothing to commit, working tree clean
+[root@e2e56099cad5 vigilant_nashgit]#
+[root@e2e56099cad5 vigilant_nashgit]#
+[root@e2e56099cad5 vigilant_nashgit]#
+[root@e2e56099cad5 vigilant_nashgit]# git log
+commit 7d7d8aa1bed6eafb3af2f87a1ef81544e75a529f (HEAD -> master)
+Author: vigilant_nash <vigilant_nash@gmail.com>
+Date:   Fri Dec 24 18:44:18 2021 +0000
+
+    my second commit
+[root@e2e56099cad5 vigilant_nashgit]#
+
+
+
+[root@e2e56099cad5 vigilant_nashgit]# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file2
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@e2e56099cad5 vigilant_nashgit]#
+
+
+
+
+
+
+
+
+
+[root@e2e56099cad5 vigilant_nashgit]# git clone https://github.com/legendrbhub/learninghub
+Cloning into 'learninghub'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 7 (delta 1), reused 7 (delta 1), pack-reused 0
+Unpacking objects: 100% (7/7), 1.54 KiB | 314.00 KiB/s, done.
+[root@e2e56099cad5 vigilant_nashgit]# ls
+file2  learninghub
+[root@e2e56099cad5 vigilant_nashgit]# cd learninghub/
+[root@e2e56099cad5 learninghub]# ls
+file1  README.md
+[root@e2e56099cad5 learninghub]# ls
+file1  README.md
+[root@e2e56099cad5 learninghub]#
+[root@e2e56099cad5 learninghub]# ls
+file1  README.md
+[root@e2e56099cad5 learninghub]# cd ..
+[root@e2e56099cad5 vigilant_nashgit]# mv file2 /root/vigilant_nashgit/learninghub/
+[root@e2e56099cad5 vigilant_nashgit]# ls
+learninghub
+[root@e2e56099cad5 vigilant_nashgit]# cd learninghub/
+[root@e2e56099cad5 learninghub]# ls
+file1  file2  README.md
+[root@e2e56099cad5 learninghub]#
+[root@e2e56099cad5 learninghub]#
+[root@e2e56099cad5 learninghub]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@e2e56099cad5 learninghub]# git add .
+[root@e2e56099cad5 learninghub]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file2
+
+[root@e2e56099cad5 learninghub]# git log
+commit b1f2fa923c2b7e285d8ad70084a2ec19be48a113 (HEAD -> master, origin/master, origin/HEAD)
+Author: Rushi <rushi@orkut.com>
+Date:   Fri Dec 24 15:42:12 2021 +0000
+
+    my first commit on git
+
+commit 1a0bfb14edb243183ea26e2b37cac0169e2713b9
+Author: Rushi <rushi@orkut.com>
+Date:   Fri Dec 24 15:40:30 2021 +0000
+
+    my first commit on git
+[root@e2e56099cad5 learninghub]#
+
