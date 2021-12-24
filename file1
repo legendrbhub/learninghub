@@ -1,0 +1,80 @@
+My first git code.
+[root@2b8f124e59e8 /]# git --version
+git version 2.32.0
+[root@2b8f124e59e8 /]#
+[root@2b8f124e59e8 /]# ls
+bin  boot  dev  etc  home  lib  lib64  local  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+[root@2b8f124e59e8 /]#
+[root@2b8f124e59e8 /]#
+[root@2b8f124e59e8 /]# cd home/
+[root@2b8f124e59e8 home]# ls
+[root@2b8f124e59e8 home]#
+[root@2b8f124e59e8 home]#
+[root@2b8f124e59e8 home]#
+[root@2b8f124e59e8 home]# mkdir project1git
+[root@2b8f124e59e8 home]#
+[root@2b8f124e59e8 home]#
+[root@2b8f124e59e8 home]# ls
+project1git
+[root@2b8f124e59e8 home]#
+[root@2b8f124e59e8 home]#
+[root@2b8f124e59e8 home]#  cd project1git/
+[root@2b8f124e59e8 project1git]# ls
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]# echo "# learninghub" >> README.md
+[root@2b8f124e59e8 project1git]# ls
+README.md
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]# git config --global user.name "Rushi"
+[root@2b8f124e59e8 project1git]# git config --global user.email "rushi@orkut.com"
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]# git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/project1git/.git/
+[root@2b8f124e59e8 project1git]# git remote add origin https://github.com/legendrbhub/learninghub.git
+[root@2b8f124e59e8 project1git]# ls
+README.md
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]# ls -a
+.  ..  .git  README.md
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]# touch file1
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]# ls
+README.md  file1
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]#
+[root@2b8f124e59e8 project1git]# vim file1
+bash: vim: command not found
+[root@2b8f124e59e8 project1git]# vi file1
+
+[root@2b8f124e59e8 project1git]#
+
+[root@2b8f124e59e8 project1git]# git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        file1
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@2b8f124e59e8 project1git]#
+
